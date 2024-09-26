@@ -2,7 +2,7 @@ import useRazorpay from "react-razorpay";
 const App=()=>{
   const [Razorpay] = useRazorpay()
   const  payNow= async ()=>{
-     const response = await fetch('http://localhost:8080/order')
+     const response = await fetch('http://localhost:8080/')
      const data = await response.json()
      const options = {
       amount:data.amount,
